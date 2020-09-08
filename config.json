@@ -1,0 +1,25 @@
+{
+  "configVersion": "1",
+  "https": true,
+  "templateVersion": 8,
+  "locales": [
+    "en"
+  ],
+  "features": [],
+  "requireArtifactBuild": true,
+  "ci_config": {
+    "build_setup_cmd": "ci/build_setup.sh",
+    "build_cmd": "npm run build",
+    "serve_setup_cmd": "npm install",
+    "serve_cmd": "ci/serve_setup.sh",
+    "rebuild_cmd": "",
+    "output_directories": [ "public" ],
+    "dependencies": {
+      "required_files": [
+        "package.json",
+        "webpack.conf.js",
+        "package-lock.json"
+      ]
+    }
+  }
+}
