@@ -15,7 +15,7 @@
     "rebuild_cmd": "",
     "output_directories": [ "public" ],
     "dependencies": {
-      "required_files": [],
-    },
+      "required_files": []
+    }
   }
 }
