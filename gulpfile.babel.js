@@ -21,7 +21,7 @@ const yextBuildArgsDefault = ["-d", "../desktop", "-s", "site", "-v"];
 // Development tasks
 gulp.task("hugo", cb => buildSite(cb));
 gulp.task("hugo-preview", cb => buildSite(cb, hugoArgsPreview));
-gulp.task("yext-build", cb => buildSite(cb, yextBuildArgsDefault, "production"));
+gulp.task("yext-build", ["css", "js", "fonts", "videos", "images"], cb => buildSite(cb, yextBuildArgsDefault, "production"));
 
 // Run server tasks
 gulp.task("server", ["hugo", "css", "js", "fonts", "videos", "images"], cb =>
