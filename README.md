@@ -1,4 +1,4 @@
-# Example site for restaurants built with Victor Hugoo
+# Example site for restaurants built with Victor Hugo
 <!-- Markdown snippet -->
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/restaurant-template-cms&stack=cms)
 
