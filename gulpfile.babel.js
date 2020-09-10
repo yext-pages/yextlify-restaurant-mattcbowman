@@ -101,7 +101,8 @@ gulp.task("images", () =>
 function runServer() {
   browserSync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: "./dist",
+      port:"8080"
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
