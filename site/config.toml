@@ -7,21 +7,21 @@ title = "Tasty Licks"
 
 [[menu.main]]
     name = "Food"
-    url  = "/food"
+    url  = "/food/index.html"
     weight = 1
 [[menu.main]]
     name = "Drinks"
-    url  = "/drinks"
+    url  = "/drinks/index.html"
     weight = 2
 [[menu.main]]
     name = "About"
-    url  = "/about"
+    url  = "/about/index.html"
     weight = 3
 [[menu.main]]
     name = "Gallery"
-    url  = "/gallery"
+    url  = "/gallery/index.html"
     weight = 4
 [[menu.main]]
      name = "Make A Reservation"
-     url  = "/contact"
+     url  = "/contact/index.html"
      weight = 5
