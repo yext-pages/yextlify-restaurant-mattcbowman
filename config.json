@@ -13,6 +13,6 @@
     "serve_setup_cmd": "./ci/serve_setup.sh",
     "serve_cmd": "npm run start",
     "rebuild_cmd": "",
-    "output_directories": [ "dist" ]
+    "output_directories": [ "desktop" ]
   }
 }
