@@ -100,9 +100,9 @@ gulp.task("images", () =>
 // Development server with browsersync
 function runServer() {
   browserSync.init({
+    port:"8080",
     server: {
-      baseDir: "./dist",
-      port:"8080"
+      baseDir: "./dist"
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
