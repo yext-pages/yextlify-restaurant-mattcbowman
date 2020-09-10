@@ -9,7 +9,7 @@ if ! type "tar" > /dev/null; then
 fi
 if ! type "hugo" > /dev/null; then
   echo Downloading hugo...
-  curl -L https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-32bit.tar.gz | tar -xz /usr/local/bin
+  curl -Ls https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-32bit.tar.gz | tar -xz /usr/local/bin
 fi  
 echo Installing Gulp CLI...
 npm install -g gulp-cli
