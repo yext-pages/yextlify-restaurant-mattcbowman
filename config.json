@@ -14,12 +14,6 @@
     "serve_cmd": "npm run start",
     "rebuild_cmd": "",
     "output_directories": [ "public" ],
-    "dependencies": {
-      "required_files": [
-        "package.json",
-        "webpack.conf.js",
-        "package-lock.json"
-      ]
-    }
+    "dependencies": {},
   }
 }
