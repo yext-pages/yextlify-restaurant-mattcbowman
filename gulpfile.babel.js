@@ -17,15 +17,10 @@ const browserSync = BrowserSync.create();
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
 const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
-const yextBuildArgsDefault = ["-d", "../desktop", "-s", "site", "-v"];
 
 // Development tasks
 gulp.task("hugo", cb => buildSite(cb));
 gulp.task("hugo-preview", cb => buildSite(cb, hugoArgsPreview));
-gulp.task("yext-build", ["css", "js", "fonts", "videos", "images"], cb => {
-  buildSite(cb, yextBuildArgsDefault, "production");
-  copyAssets("../desktop");
-});
 
 // Run server tasks
 gulp.task("server", ["hugo", "css", "js", "fonts", "videos", "images"], cb =>
@@ -102,15 +97,6 @@ gulp.task("images", () =>
     .pipe(gulp.dest("./dist/img"))
     .pipe(browserSync.stream())
 );
-
-// Copy files from dist to directory 
-function copyAssets(directory) {
-  gulp.src("./dist/js/**/*.js").pipe(gulp.dest(path.join(directory, "js")));
-  gulp.src("./dist/css/**/*.css").pipe(gulp.dest(path.join(directory, "css")));
-  gulp.src("./dist/fonts/**/*").pipe(gulp.dest(path.join(directory, "fonts")));
-  gulp.src("./dist/img/**/*").pipe(gulp.dest(path.join(directory, "img")));
-  gulp.src("./dist/videos/**/*").pipe(gulp.dest(path.join(directory, "videos")));
-}
 
 // Development server with browsersync
 function runServer() {
